@@ -1,0 +1,17 @@
+.menu {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+}
+
+.menu_item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  color: red;
+}

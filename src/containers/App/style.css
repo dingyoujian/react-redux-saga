@@ -1,0 +1,67 @@
+.push-exit {
+  opacity: 1;
+}
+.push-exit-active {
+  opacity: 0;
+  animation: left-slide 150ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+.push-exit-done {
+  opacity: 1;
+}
+.push-enter {
+  opacity: 1;
+}
+.push-enter-active {
+  opacity: 0;
+  animation: left-slide 150ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+.push-enter-done {
+  opacity: 1;
+}
+
+.pop-exit {
+  opacity: 0;
+}
+.pop-exit-active {
+  opacity: 1;
+  animation: right-slide 150ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+.pop-exit-done {
+  opacity: 1;
+}
+.pop-enter {
+  opacity: 0;
+}
+.pop-enter-active {
+  opacity: 1;
+  animation: right-slide 150ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+.pop-enter-done {
+  opacity: 1;
+}
+
+@keyframes left-slide {
+  from {
+    opacity: 0.01;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes right-slide {
+  from {
+    opacity: 0.01;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

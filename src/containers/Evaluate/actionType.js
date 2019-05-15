@@ -1,0 +1,3 @@
+export const FETCH_EVALUATE = "FETCH_EVALUATE";
+export const SET_EVALUATE = "SET_EVALUATE";
+export const INIT_EVALUATE = "INIT_EVALUATE";
